@@ -1,0 +1,92 @@
+# Compile of Hash_light.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 12:23:22 on Aug 19,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/xor_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 87
+# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/theta_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 88
+# Error loading design
+# End time: 12:23:24 on Aug 19,2024, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 2
+# Compile of Hash_light.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 12:25:38 on Aug 19,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/xor_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 87
+# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(88).
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/rho_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 89
+# Error loading design
+# End time: 12:25:39 on Aug 19,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+# Compile of Hash_light.sv was successful with warnings.
+# Compile of Hash_light.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 12:38:01 on Aug 19,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave  \
+sim:/hash_function_tb/dut/clk
+add wave  \
+sim:/hash_function_tb/dut/clk \
+sim:/hash_function_tb/dut/rst_n \
+sim:/hash_function_tb/dut/start \
+sim:/hash_function_tb/dut/m \
+sim:/hash_function_tb/dut/IV \
+sim:/hash_function_tb/dut/d \
+sim:/hash_function_tb/dut/done \
+sim:/hash_function_tb/dut/H \
+sim:/hash_function_tb/dut/round \
+sim:/hash_function_tb/dut/H_intermediate_SA \
+sim:/hash_function_tb/dut/H_intermediate_XOR \
+sim:/hash_function_tb/dut/H_intermediate_Theta \
+sim:/hash_function_tb/dut/H_intermediate_rho \
+sim:/hash_function_tb/dut/H_intermediate \
+sim:/hash_function_tb/dut/state \
+sim:/hash_function_tb/dut/next_state
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: xx xx xx xx
+# Digest: xx xx xx xx
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
+# 1
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# End time: 12:50:18 on Aug 19,2024, Elapsed time: 0:12:17
+# Errors: 0, Warnings: 1

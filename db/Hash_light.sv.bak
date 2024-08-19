@@ -69,10 +69,6 @@ module hash_function(
 
     logic [7:0] H [0:3];
     logic [4:0] round;
-    logic [7:0] H_intermediate_SA [0:3];
-    logic [7:0] H_intermediate_XOR [0:3];
-    logic [7:0] H_intermediate_Theta [0:3];
-    logic [7:0] H_intermediate_rho [0:3];
     logic [7:0] H_intermediate [0:3];
 
     // Stati della FSM
@@ -87,20 +83,11 @@ module hash_function(
     state_t state, next_state;
 
     // Istanziare i moduli
-    SA sa_inst (.m(m), .IV(IV), .H(H_intermediate_SA));
-    XOR_Module xor_inst (.H_in(H), .IV(IV), .H_out(H_intermediate_XOR));
-    Theta theta_inst (.H_in(H_intermediate), .H_out(H_intermediate_Theta));
-    rho rho_inst (.H_in(H_intermediate_Theta), .H_out(H_intermediate_rho));
+    SA sa_inst (.m(m), .IV(IV), .H(H_intermediate));
+    XOR_Module xor_inst (.H_in(H), .IV(IV), .H_out(H_intermediate));
+    Theta theta_inst (.H_in(H_intermediate), .H_out(H_intermediate));
+    rho rho_inst (.H_in(H_intermediate), .H_out(H));
     FPX fpx_inst (.H(H), .IV(IV), .d(d));
- 
-    // Multiplexer per selezionare il segnale corretto
-    always_comb begin
-        case (state)
-            CALC_SA: H_intermediate = H_intermediate_SA;
-            CALC_ROUND: H_intermediate = H_intermediate_XOR;
-            default: H_intermediate = H_intermediate_SA; // Default case
-        endcase
-    end
 
     // Registro di stato
     always_ff @(posedge clk or negedge rst_n) begin
