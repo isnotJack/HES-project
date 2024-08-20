@@ -68,6 +68,7 @@ module hash_function(
 );
 
     logic [7:0] H [0:3];
+    logic [2:0] state, next_state;
     logic [4:0] round;
     logic [7:0] H_intermediate_SA [0:3];
     logic [7:0] H_intermediate_XOR [0:3];
@@ -76,15 +77,21 @@ module hash_function(
     logic [7:0] H_intermediate [0:3];
 
     // Stati della FSM
-    typedef enum logic [2:0] {
+    /*typedef enum logic [2:0] {
         IDLE,
         CALC_SA,
         CALC_ROUND,
         CALC_FINAL,
         DONE
-    } state_t;
-    
-    state_t state, next_state;
+    } state_t;*/
+
+    parameter [2:0] IDLE;
+    parameter [2:0] CALC_SA;
+    parameter [2:0] CALC_ROUND;
+    parameter [2:0] CALC_FINAL;
+    parameter [2:0] DONE;
+
+    //state_t state, next_state;
 
     // Istanziare i moduli
     SA sa_inst (.m(m), .IV(IV), .H(H_intermediate_SA));
