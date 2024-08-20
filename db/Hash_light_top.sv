@@ -38,18 +38,18 @@ module hash_function(
     FPX fpx_inst (.H(H_fpx), .IV(IV), .d(d));
  
     // Multiplexer per selezionare il segnale corretto
-    // always_comb begin
-    //     case (state)
-    //         CALC_SA: H_intermediate = m;
-    //         CALC_ROUND: H_intermediate = H_out;
-    //         CALC_FINAL: H_fpx = H_out;
-    //         default:    for (int i = 0; i < 4; i++) begin
-    //    	 		H_intermediate[i] = 8'b0;
-    //                     H_fpx[i] = 8'b0;
-    // 			end
+     always_comb begin
+         case (state)
+             CALC_SA: H_intermediate = m;
+             CALC_ROUND: H_intermediate = H_out;
+             CALC_FINAL: H_fpx = H_out;
+             default:    for (int i = 0; i < 4; i++) begin
+        	 		H_intermediate[i] = 8'b0;
+                         H_fpx[i] = 8'b0;
+     			end
                        
-    //      endcase
-    // end
+          endcase
+     end
 
     // Registro di stato
     always_ff @(posedge clk or negedge rst_n) begin
@@ -59,15 +59,6 @@ module hash_function(
             done <= 0;
         end else begin
             state <= next_state;
-            case (state)
-            CALC_SA: H_intermediate <= m;
-            CALC_ROUND: H_intermediate <= H_out;
-            CALC_FINAL: H_fpx <= H_out;
-            default:    for (int i = 0; i < 4; i++) begin
-       	 		H_intermediate[i] <= 8'b0;
-                        H_fpx[i] <= 8'b0;
-    			end
-         endcase
             if (state == CALC_ROUND)
                 round <= round + 1;
             if (state == DONE)
