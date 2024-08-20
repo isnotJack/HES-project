@@ -43,12 +43,11 @@ module hash_function(
             CALC_SA: H_intermediate = m;
             CALC_ROUND: H_intermediate = H_out;
             CALC_FINAL: H_fpx = H_out;
-            default:    for (int i = 0; i < 4; i++) begin
-       	 		H_intermediate[i] = 8'b0;
-                        H_fpx[i] = 8'b0;
-    			end
-                       
-         endcase
+            default:    begin
+                        H_intermediate = 24'b0;
+                        H_fpx = 24'b0;
+                        end
+        endcase
     end
 
     // Registro di stato

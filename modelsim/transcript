@@ -1,61 +1,127 @@
-# Compile of Hash_light.sv was successful with warnings.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_round.sv failed with 2 errors.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
 # Compile of Hash_light_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 12:23:22 on Aug 19,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/xor_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 87
-# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/theta_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 88
-# Error loading design
-# End time: 12:23:24 on Aug 19,2024, Elapsed time: 0:00:02
-# Errors: 2, Warnings: 2
-# Compile of Hash_light.sv was successful with warnings.
+# 9 compiles, 2 failed with 4 errors.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_round.sv failed with 2 errors.
+# 2 compiles, 2 failed with 4 errors.
+# Compile of Hash_round.sv failed with 2 errors.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_round.sv failed with 2 errors.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
 # Compile of Hash_light_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
+# 9 compiles, 2 failed with 4 errors.
+# Compile of Hash_round.sv failed with 1 errors.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_round.sv failed with 1 errors.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 2 failed with 3 errors.
+# Compile of Hash_round.sv failed with 1 errors.
+# Compile of Hash_round.sv failed with 1 errors.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 1 failed with 2 errors.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
 vsim -gui work.hash_function_tb
 # vsim -gui work.hash_function_tb 
-# Start time: 12:25:38 on Aug 19,2024
+# Start time: 16:35:15 on Aug 20,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
 # Loading work.hash_function
+# Loading work.round
 # Loading work.SA
 # Loading work.XOR_Module
 # Loading work.Theta
 # Loading work.rho
 # Loading work.FPX
-# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H_intermediate', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(86).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/xor_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 87
-# ** Error (suppressible): (vsim-3839) Variable '/hash_function_tb/dut/H', driven via a port connection, is multiply driven. See C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv(88).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/rho_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light.sv Line: 89
-# Error loading design
-# End time: 12:25:39 on Aug 19,2024, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 2
-# Compile of Hash_light.sv was successful with warnings.
-# Compile of Hash_light.sv was successful with warnings.
 vsim -gui work.hash_function_tb
+# End time: 16:37:25 on Aug 20,2024, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 14
 # vsim -gui work.hash_function_tb 
-# Start time: 12:38:01 on Aug 19,2024
+# Start time: 16:37:25 on Aug 20,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
 # Loading work.hash_function
+# Loading work.round
 # Loading work.SA
 # Loading work.XOR_Module
 # Loading work.Theta
 # Loading work.rho
 # Loading work.FPX
+# Load canceled
 add wave  \
-sim:/hash_function_tb/dut/clk
+sim:/hash_function_tb/clk \
+sim:/hash_function_tb/rst_n \
+sim:/hash_function_tb/start \
+sim:/hash_function_tb/m \
+sim:/hash_function_tb/IV \
+sim:/hash_function_tb/d \
+sim:/hash_function_tb/done
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 35 ps ###############
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 0
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 1
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/rho_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 2
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:22
+#   Active process: /hash_function_tb/dut/round_inst/#IMPLICIT-WIRE(H_in)#14 @ sub-iteration 3
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv:37
+#   Active process: /hash_function_tb/dut/round_inst/sa_inst/#IMPLICIT-WIRE(H)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:19
+#   Active process: /hash_function_tb/dut/round_inst/xor_inst/#IMPLICIT-WIRE(H_out)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:20
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 5
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
+add wave -position insertpoint  \
+sim:/hash_function_tb/dut/round_inst/theta_inst/H_in
+add wave -position insertpoint  \
+sim:/hash_function_tb/dut/round_inst/theta_inst/H_out
 add wave  \
+sim:/hash_function_tb/dut/IDLE \
+sim:/hash_function_tb/dut/CALC_SA \
+sim:/hash_function_tb/dut/CALC_ROUND \
+sim:/hash_function_tb/dut/CALC_FINAL \
+sim:/hash_function_tb/dut/DONE \
 sim:/hash_function_tb/dut/clk \
 sim:/hash_function_tb/dut/rst_n \
 sim:/hash_function_tb/dut/start \
@@ -64,29 +130,141 @@ sim:/hash_function_tb/dut/IV \
 sim:/hash_function_tb/dut/d \
 sim:/hash_function_tb/dut/done \
 sim:/hash_function_tb/dut/H \
-sim:/hash_function_tb/dut/round \
-sim:/hash_function_tb/dut/H_intermediate_SA \
-sim:/hash_function_tb/dut/H_intermediate_XOR \
-sim:/hash_function_tb/dut/H_intermediate_Theta \
-sim:/hash_function_tb/dut/H_intermediate_rho \
-sim:/hash_function_tb/dut/H_intermediate \
 sim:/hash_function_tb/dut/state \
-sim:/hash_function_tb/dut/next_state
+sim:/hash_function_tb/dut/next_state \
+sim:/hash_function_tb/dut/round \
+sim:/hash_function_tb/dut/H_intermediate \
+sim:/hash_function_tb/dut/H_fpx \
+sim:/hash_function_tb/dut/H_out
 run
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
 run
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Digest: xx xx xx xx
-# Digest: xx xx xx xx
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
+quit -sim
+# End time: 16:46:15 on Aug 20,2024, Elapsed time: 0:08:50
+# Errors: 4, Warnings: 1
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:46:28 on Aug 20,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave  \
+sim:/hash_function_tb/dut/IDLE \
+sim:/hash_function_tb/dut/CALC_SA \
+sim:/hash_function_tb/dut/CALC_ROUND \
+sim:/hash_function_tb/dut/CALC_FINAL \
+sim:/hash_function_tb/dut/DONE \
+sim:/hash_function_tb/dut/clk \
+sim:/hash_function_tb/dut/rst_n \
+sim:/hash_function_tb/dut/start \
+sim:/hash_function_tb/dut/m \
+sim:/hash_function_tb/dut/IV \
+sim:/hash_function_tb/dut/d \
+sim:/hash_function_tb/dut/done \
+sim:/hash_function_tb/dut/H \
+sim:/hash_function_tb/dut/state \
+sim:/hash_function_tb/dut/next_state \
+sim:/hash_function_tb/dut/round \
+sim:/hash_function_tb/dut/H_intermediate \
+sim:/hash_function_tb/dut/H_fpx \
+sim:/hash_function_tb/dut/H_out
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 35 ps ###############
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 0
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 1
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/rho_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 2
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:22
+#   Active process: /hash_function_tb/dut/round_inst/#IMPLICIT-WIRE(H_in)#14 @ sub-iteration 3
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv:37
+#   Active process: /hash_function_tb/dut/round_inst/sa_inst/#IMPLICIT-WIRE(H)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:19
+#   Active process: /hash_function_tb/dut/round_inst/xor_inst/#IMPLICIT-WIRE(H_out)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:20
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 5
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
+quit -sim
+# End time: 16:55:28 on Aug 20,2024, Elapsed time: 0:09:00
+# Errors: 1, Warnings: 1
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:55:53 on Aug 20,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
+# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
+add wave  \
+sim:/hash_function_tb/dut/IDLE \
+sim:/hash_function_tb/dut/CALC_SA \
+sim:/hash_function_tb/dut/CALC_ROUND \
+sim:/hash_function_tb/dut/CALC_FINAL \
+sim:/hash_function_tb/dut/DONE \
+sim:/hash_function_tb/dut/clk \
+sim:/hash_function_tb/dut/rst_n \
+sim:/hash_function_tb/dut/start \
+sim:/hash_function_tb/dut/m \
+sim:/hash_function_tb/dut/IV \
+sim:/hash_function_tb/dut/d \
+sim:/hash_function_tb/dut/done \
+sim:/hash_function_tb/dut/H \
+sim:/hash_function_tb/dut/state \
+sim:/hash_function_tb/dut/next_state \
+sim:/hash_function_tb/dut/round \
+sim:/hash_function_tb/dut/H_intermediate \
+sim:/hash_function_tb/dut/H_fpx \
+sim:/hash_function_tb/dut/H_out
+run
+# Digest: 34 55 0f 14
+# Digest: bb aa 99 88
 # ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
 #    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
 # 1
 # Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-# End time: 12:50:18 on Aug 19,2024, Elapsed time: 0:12:17
-# Errors: 0, Warnings: 1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
+# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 34 55 0f 14
+# Digest: bb aa 99 88
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
+# End time: 16:57:07 on Aug 20,2024, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 3
