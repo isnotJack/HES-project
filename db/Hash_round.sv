@@ -25,6 +25,7 @@ module round(
                         end
             default:    begin
                         H_intermediate = 8'b0;
+                        H_out = 8'b0;
                         end
         endcase
     end
