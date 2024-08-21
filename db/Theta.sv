@@ -5,7 +5,7 @@ module Theta(
     // Implementazione di permutazione custom
     always_comb begin
         for (int i = 0; i < 4; i++) begin
-            H_out[i] = H_in[3-1];
+            H_out[i] = H_in[3-i];
         end
     end
 endmodule

@@ -38,31 +38,30 @@ module hash_function(
     FPX fpx_inst (.H(H_fpx), .IV(IV), .d(d));
  
     // Multiplexer per selezionare il segnale corretto
-     always_comb begin
-         case (state)
-             CALC_SA: H_intermediate = m;
-             CALC_ROUND: H_intermediate = H_out;
-             CALC_FINAL: H_fpx = H_out;
-             default:    for (int i = 0; i < 4; i++) begin
-        	 		H_intermediate[i] = 8'b0;
-                         H_fpx[i] = 8'b0;
-     			end
-                       
-          endcase
-     end
-
+     
     // Registro di stato
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             state <= IDLE;
             round <= 0;
-            done <= 0;
         end else begin
             state <= next_state;
-            if (state == CALC_ROUND)
+            if (state == IDLE && start)
+                H_intermediate <= m;
+            else if (state == CALC_SA)
+            begin
+                H_intermediate <= H_out;
+                round <= round +1;
+            end
+            else if (state == CALC_ROUND)
+            begin
                 round <= round + 1;
-            if (state == DONE)
-                done <= 1;
+                H_intermediate <= H_out;
+                if(round==23)
+                    H_fpx <= H_out;
+            end
+            else 
+                round<=0;
         end
     end
 
@@ -71,6 +70,7 @@ module hash_function(
         next_state = state;
         case (state)
             IDLE: begin
+                done=0;
                 if (start)
                     next_state = CALC_SA;
             end
@@ -78,7 +78,7 @@ module hash_function(
                 next_state = CALC_ROUND;
             end
             CALC_ROUND: begin
-                if (round >= 0 && round < 23) begin
+                if (round >= 1 && round < 23) begin
                     next_state = CALC_ROUND;
                 end else begin
                     next_state = CALC_FINAL;
@@ -88,6 +88,7 @@ module hash_function(
                 next_state = DONE;
             end
             DONE: begin
+                done = 1;
                 next_state = IDLE;
             end
         endcase

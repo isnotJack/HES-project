@@ -1,189 +1,3 @@
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 17:31:39 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
-add wave sim:/hash_function_tb/*
-add wave -position insertpoint  \
-sim:/hash_function_tb/d
-run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-add wave  \
-sim:/hash_function_tb/dut/IDLE \
-sim:/hash_function_tb/dut/CALC_SA \
-sim:/hash_function_tb/dut/CALC_ROUND \
-sim:/hash_function_tb/dut/CALC_FINAL \
-sim:/hash_function_tb/dut/DONE \
-sim:/hash_function_tb/dut/clk \
-sim:/hash_function_tb/dut/rst_n \
-sim:/hash_function_tb/dut/start \
-sim:/hash_function_tb/dut/m \
-sim:/hash_function_tb/dut/IV \
-sim:/hash_function_tb/dut/d \
-sim:/hash_function_tb/dut/done \
-sim:/hash_function_tb/dut/H \
-sim:/hash_function_tb/dut/state \
-sim:/hash_function_tb/dut/next_state \
-sim:/hash_function_tb/dut/round \
-sim:/hash_function_tb/dut/H_intermediate \
-sim:/hash_function_tb/dut/H_fpx \
-sim:/hash_function_tb/dut/H_out
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
-run
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-quit -sim
-# End time: 17:36:17 on Aug 20,2024, Elapsed time: 0:04:38
-# Errors: 0, Warnings: 4
-# Compile of Hash_light_top.sv was successful with warnings.
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 17:37:30 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
-add wave -position insertpoint  \
-sim:/hash_function_tb/d
-run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-quit -sim
-# End time: 17:38:45 on Aug 20,2024, Elapsed time: 0:01:15
-# Errors: 0, Warnings: 5
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 17:39:46 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
-add wave  \
-sim:/hash_function_tb/dut/IDLE \
-sim:/hash_function_tb/dut/CALC_SA \
-sim:/hash_function_tb/dut/CALC_ROUND \
-sim:/hash_function_tb/dut/CALC_FINAL \
-sim:/hash_function_tb/dut/DONE \
-sim:/hash_function_tb/dut/clk \
-sim:/hash_function_tb/dut/rst_n \
-sim:/hash_function_tb/dut/start \
-sim:/hash_function_tb/dut/m \
-sim:/hash_function_tb/dut/IV \
-sim:/hash_function_tb/dut/d \
-sim:/hash_function_tb/dut/done \
-sim:/hash_function_tb/dut/H \
-sim:/hash_function_tb/dut/state \
-sim:/hash_function_tb/dut/next_state \
-sim:/hash_function_tb/dut/round \
-sim:/hash_function_tb/dut/H_intermediate \
-sim:/hash_function_tb/dut/H_fpx \
-sim:/hash_function_tb/dut/H_out
-run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-quit -sim
-# End time: 17:52:31 on Aug 20,2024, Elapsed time: 0:12:45
-# Errors: 0, Warnings: 4
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 17:52:42 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'round_inst'.  Expected 6, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv(37): [TFMPC] - Missing connection for port 'reset'.
-add wave  \
-sim:/hash_function_tb/dut/round_inst/IDLE \
-sim:/hash_function_tb/dut/round_inst/CALC_SA \
-sim:/hash_function_tb/dut/round_inst/CALC_ROUND \
-sim:/hash_function_tb/dut/round_inst/CALC_FINAL \
-sim:/hash_function_tb/dut/round_inst/DONE \
-sim:/hash_function_tb/dut/round_inst/H_in \
-sim:/hash_function_tb/dut/round_inst/IV \
-sim:/hash_function_tb/dut/round_inst/state \
-sim:/hash_function_tb/dut/round_inst/clk \
-sim:/hash_function_tb/dut/round_inst/reset \
-sim:/hash_function_tb/dut/round_inst/H_out \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_SA \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_rho \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_reg
-run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-quit -sim
-# End time: 17:55:11 on Aug 20,2024, Elapsed time: 0:02:29
-# Errors: 0, Warnings: 4
-# Compile of Hash_light_top.sv was successful with warnings.
-# Compile of Hash_round.sv failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
 # Compile of completo.sv was successful with warnings.
 # Compile of FPX.sv was successful with warnings.
 # Compile of Hash_light_top.sv was successful with warnings.
@@ -196,7 +10,7 @@ quit -sim
 # 9 compiles, 0 failed with no errors.
 vsim -gui work.hash_function_tb
 # vsim -gui work.hash_function_tb 
-# Start time: 17:56:08 on Aug 20,2024
+# Start time: 09:43:33 on Aug 21,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
 # Loading work.hash_function
@@ -209,163 +23,52 @@ vsim -gui work.hash_function_tb
 add wave -position insertpoint  \
 sim:/hash_function_tb/d
 run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 35 ps ###############
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 0
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 1
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+#   Active process: /hash_function_tb/dut/round_inst/rho_inst/#IMPLICIT-WIRE(H_out)#3 @ sub-iteration 2
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:22
+#   Active process: /hash_function_tb/dut/round_inst/#IMPLICIT-WIRE(H_in)#14 @ sub-iteration 3
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv:25
+#   Active process: /hash_function_tb/dut/round_inst/sa_inst/#IMPLICIT-WIRE(H)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:19
+#   Active process: /hash_function_tb/dut/round_inst/xor_inst/#IMPLICIT-WIRE(H_out)#4 @ sub-iteration 4
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:20
+#   Active process: /hash_function_tb/dut/round_inst/theta_inst/#IMPLICIT-WIRE(H_in)#11 @ sub-iteration 5
+#     Source: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv:21
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 35 ps.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave  \
-sim:/hash_function_tb/dut/round_inst/IDLE \
-sim:/hash_function_tb/dut/round_inst/CALC_SA \
-sim:/hash_function_tb/dut/round_inst/CALC_ROUND \
-sim:/hash_function_tb/dut/round_inst/CALC_FINAL \
-sim:/hash_function_tb/dut/round_inst/DONE \
-sim:/hash_function_tb/dut/round_inst/H_in \
-sim:/hash_function_tb/dut/round_inst/IV \
-sim:/hash_function_tb/dut/round_inst/state \
-sim:/hash_function_tb/dut/round_inst/clk \
-sim:/hash_function_tb/dut/round_inst/reset \
-sim:/hash_function_tb/dut/round_inst/H_out \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_SA \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_rho \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_reg
-run
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
 quit -sim
-# End time: 18:04:43 on Aug 20,2024, Elapsed time: 0:08:35
+# End time: 10:00:07 on Aug 21,2024, Elapsed time: 0:16:34
 # Errors: 0, Warnings: 1
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv failed with 1 errors.
 # Compile of Hash_round.sv was successful with warnings.
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 18:05:02 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-add wave  \
-sim:/hash_function_tb/dut/round_inst/IDLE \
-sim:/hash_function_tb/dut/round_inst/CALC_SA \
-sim:/hash_function_tb/dut/round_inst/CALC_ROUND \
-sim:/hash_function_tb/dut/round_inst/CALC_FINAL \
-sim:/hash_function_tb/dut/round_inst/DONE \
-sim:/hash_function_tb/dut/round_inst/H_in \
-sim:/hash_function_tb/dut/round_inst/IV \
-sim:/hash_function_tb/dut/round_inst/state \
-sim:/hash_function_tb/dut/round_inst/clk \
-sim:/hash_function_tb/dut/round_inst/reset \
-sim:/hash_function_tb/dut/round_inst/H_out \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_SA \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_rho \
-sim:/hash_function_tb/dut/round_inst/H_intermediate_reg
-run
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-add wave -position insertpoint  \
-sim:/hash_function_tb/d
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Digest: 34 55 0f 14
-# Digest: bb aa 99 88
-# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
-#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
-# 1
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
-quit -sim
-# End time: 18:20:56 on Aug 20,2024, Elapsed time: 0:15:54
-# Errors: 0, Warnings: 1
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 1 failed with 1 error.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
 # Compile of Hash_light_top.sv was successful with warnings.
 # Compile of Hash_round.sv was successful with warnings.
-# 2 compiles, 0 failed with no errors.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
 vsim -gui work.hash_function_tb
 # vsim -gui work.hash_function_tb 
-# Start time: 18:21:17 on Aug 20,2024
-# Loading sv_std.std
-# Loading work.hash_function_tb
-# Loading work.hash_function
-# Loading work.round
-# Loading work.SA
-# Loading work.XOR_Module
-# Loading work.Theta
-# Loading work.rho
-# Loading work.FPX
-# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# ** Error (suppressible): (vsim-3389) Port 'reset' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /hash_function_tb/dut/round_inst File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-# Error loading design
-# End time: 18:21:18 on Aug 20,2024, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 2
-# Compile of Hash_light_top.sv was successful with warnings.
-vsim -gui work.hash_function_tb
-# vsim -gui work.hash_function_tb 
-# Start time: 18:22:14 on Aug 20,2024
+# Start time: 10:05:22 on Aug 21,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
 # Loading work.hash_function
@@ -397,7 +100,107 @@ sim:/hash_function_tb/dut/H_fpx \
 sim:/hash_function_tb/dut/H_out
 run
 # Digest: b1 d0 8a 91
-# Digest: bb aa 99 88
+# Digest: 3e 2f 1c 0d
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
+# 1
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: b1 d0 8a 91
+# Digest: 3e 2f 1c 0d
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
+# 1
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+quit -sim
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# End time: 10:23:07 on Aug 21,2024, Elapsed time: 0:17:45
+# Errors: 0, Warnings: 2
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 10:23:33 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+run
+# Digest: b1 d0 8a 91
+# Digest: 3e 2f 1c 0d
 # ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
 #    Time: 335 ps  Iteration: 0  Instance: /hash_function_tb
 # 1
@@ -405,9 +208,508 @@ run
 # Can't move the Now cursor.
 # Can't move the Now cursor.
 # Can't move the Now cursor.
+quit -sim
+# End time: 10:30:16 on Aug 21,2024, Elapsed time: 0:06:43
+# Errors: 0, Warnings: 1
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 10:30:40 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+run
+# Digest: c5 a4 fe e5
+# Digest: 4a 5b 68 79
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# 1
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
 # Can't move the Now cursor.
 # Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# End time: 18:26:25 on Aug 20,2024, Elapsed time: 0:04:11
+quit -sim
+# End time: 10:38:26 on Aug 21,2024, Elapsed time: 0:07:46
 # Errors: 0, Warnings: 2
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 10:38:36 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+run
+# Digest: b7 d6 8c 97
+# Digest: 38 29 1a 0b
+# ** Note: $finish    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# 1
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 10:43:35 on Aug 21,2024, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 2
+# Compile of Hash_light_tb.sv was successful.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:01:05 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+run
+# Digest: b7 d6 8c 97
+# Digest: 38 29 1a 0b
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+quit -sim
+# End time: 11:05:48 on Aug 21,2024, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 2
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of completo.sv was successful with warnings.
+# Compile of FPX.sv was successful with warnings.
+# Compile of Hash_light_top.sv was successful with warnings.
+# Compile of Hash_round.sv was successful with warnings.
+# Compile of Rho.sv was successful with warnings.
+# Compile of SA.sv was successful with warnings.
+# Compile of Theta.sv was successful with warnings.
+# Compile of Xor_module.sv was successful with warnings.
+# Compile of Hash_light_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:06:12 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+run
+# Digest: 48 d6 9d ed
+# Digest: c7 29 0b 71
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 d6 9d ed
+# Digest: c7 29 0b 71
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 11:14:17 on Aug 21,2024, Elapsed time: 0:08:05
+# Errors: 0, Warnings: 1
+# Compile of Rho.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:14:41 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+run
+# Digest: 48 96 cd b8
+# Digest: c7 69 5b 24
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 11:26:16 on Aug 21,2024, Elapsed time: 0:11:35
+# Errors: 0, Warnings: 2
+# Compile of Rho.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:26:39 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+run
+# Digest: d4 c8 af 91
+# Digest: 5b 37 39 0d
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 11:36:40 on Aug 21,2024, Elapsed time: 0:10:01
+# Errors: 0, Warnings: 2
+# Compile of Rho.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:36:58 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IDLE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/round_inst/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/round_inst/DONE
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_in
+add wave -position end  sim:/hash_function_tb/dut/round_inst/IV
+add wave -position end  sim:/hash_function_tb/dut/round_inst/state
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_out
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_SA
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_XOR
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_Theta
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate_rho
+add wave -position end  sim:/hash_function_tb/dut/round_inst/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/d
+run
+# Digest: 48 96 cd b8
+# Digest: c7 69 5b 24
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: c7 69 5b 24
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 325 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 11:49:26 on Aug 21,2024, Elapsed time: 0:12:28
+# Errors: 0, Warnings: 1
+# Compile of Hash_light_top.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:49:43 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+run
+# Digest: 48 96 cd b8
+# Digest: c7 69 5b 24
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: c7 69 5b 24
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 345 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+quit -sim
+# End time: 11:53:19 on Aug 21,2024, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 1
+# Compile of Hash_light_top.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:53:34 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+quit -sim
+# End time: 11:54:33 on Aug 21,2024, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 1
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:54:49 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave  \
+sim:/hash_function_tb/dut/IDLE \
+sim:/hash_function_tb/dut/CALC_SA \
+sim:/hash_function_tb/dut/CALC_ROUND \
+sim:/hash_function_tb/dut/CALC_FINAL \
+sim:/hash_function_tb/dut/DONE \
+sim:/hash_function_tb/dut/clk \
+sim:/hash_function_tb/dut/rst_n \
+sim:/hash_function_tb/dut/start \
+sim:/hash_function_tb/dut/m \
+sim:/hash_function_tb/dut/IV \
+sim:/hash_function_tb/dut/d \
+sim:/hash_function_tb/dut/done \
+sim:/hash_function_tb/dut/H \
+sim:/hash_function_tb/dut/state \
+sim:/hash_function_tb/dut/next_state \
+sim:/hash_function_tb/dut/round \
+sim:/hash_function_tb/dut/H_intermediate \
+sim:/hash_function_tb/dut/H_fpx \
+sim:/hash_function_tb/dut/H_out
+run
+# Digest: 48 96 cd b8
+quit -sim
+# End time: 11:57:13 on Aug 21,2024, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 1
+# Compile of Hash_light_tb.sv was successful.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 11:57:28 on Aug 21,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.hash_function
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+run
+# Digest: 48 96 cd b8
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(93)
+#    Time: 565 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 93
+# Can't move the Now cursor.

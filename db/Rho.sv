@@ -4,7 +4,7 @@ module rho(
 );
     always_comb begin
         for (int i = 0; i < 4; i++) begin
-            H_out[i] = (H_in[3-i] + 8'h85) % 8'hFD;
+            H_out[i] = (H_in[i] + 8'h85) % 8'hFD;
         end
     end
 endmodule

@@ -60,7 +60,7 @@ module hash_function_tb;
         start = 0;
 
         // Aspetta che il processo di hashing finisca
-        wait(done);
+        wait(done) @ posedge clk;
 
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
@@ -71,10 +71,10 @@ module hash_function_tb;
         m[1] = 8'hEE;
         m[2] = 8'hDD;
         m[3] = 8'hCC;
-        IV[0] = 8'hBB;
-        IV[1] = 8'hAA;
-        IV[2] = 8'h99;
-        IV[3] = 8'h88;
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
 
         // Avviare l'hashing
         #10;
@@ -83,14 +83,14 @@ module hash_function_tb;
         start = 0;
 
         // Aspetta che il processo di hashing finisca
-        wait(done);
+        wait(done) @ posedge clk;
 
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
 
         // Fine della simulazione
         #10;
-        $finish;
+        $stop;
     end
 
 endmodule
