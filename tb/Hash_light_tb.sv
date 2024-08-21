@@ -27,14 +27,15 @@ module hash_function_tb;
 
     // Procedura iniziale
     initial begin
+        $readmemh("../modelsim/tv/Test_Vector1.hex",m);
         // Inizializzazione
         clk = 0;
         rst_n = 0;
         start = 0;
-        m[0] = 8'h00;
-        m[1] = 8'h00;
-        m[2] = 8'h00;
-        m[3] = 8'h00;
+        // m[0] = 8'h00;
+        // m[1] = 8'h00;
+        // m[2] = 8'h00;
+        // m[3] = 8'h00;
         IV[0] = 8'h00;
         IV[1] = 8'h00;
         IV[2] = 8'h00;
@@ -45,10 +46,10 @@ module hash_function_tb;
         rst_n = 1;
 
         // Test Case 1: Input con valori noti
-        m[0] = 8'h01;
-        m[1] = 8'h02;
-        m[2] = 8'h03;
-        m[3] = 8'h04;
+        // m[0] = 8'h01;
+        // m[1] = 8'h02;
+        // m[2] = 8'h03;
+        // m[3] = 8'h04;
         IV[0] = 8'h34;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
@@ -60,7 +61,7 @@ module hash_function_tb;
         start = 0;
 
         // Aspetta che il processo di hashing finisca
-        wait(done) @ posedge clk;
+        wait(done) @ (posedge clk);
 
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
@@ -83,7 +84,7 @@ module hash_function_tb;
         start = 0;
 
         // Aspetta che il processo di hashing finisca
-        wait(done) @ posedge clk;
+        wait(done)@ (posedge clk);
 
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
