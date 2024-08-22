@@ -1,4 +1,4 @@
-module hash_function(
+module Hash_light_top(
     input  logic clk,
     input  logic rst_n,
     input  logic start,
@@ -68,9 +68,9 @@ module hash_function(
     // Logica della FSM
     always_comb begin
         next_state = state;
+		  done=0;
         case (state)
             IDLE: begin
-                done=0;
                 if (start)
                     next_state = CALC_SA;
             end

@@ -12,7 +12,7 @@ module hash_function_tb;
     logic done;
 
     // Istanziare il DUT (Device Under Test)
-    Hash_light_top dut (
+    hash_function dut (
         .clk(clk),
         .rst_n(rst_n),
         .start(start),

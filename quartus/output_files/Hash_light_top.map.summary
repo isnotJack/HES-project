@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Aug 22 11:29:17 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Hash_light_top
+Top-level Entity Name : Hash_light_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 72
+Total pins : 1
+Total virtual pins : 99
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
