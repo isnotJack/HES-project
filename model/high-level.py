@@ -51,13 +51,13 @@ def hash_function(m, IV, rounds=24):
 def read_message():
     while True:
         try:
-            message = input("Inserisci un messaggio di 4 byte (es. 01 02 03 04): ")
+            message = input("Insert a 4 byte messages (es. 01 02 03 04): ")
             m = [int(x, 16) for x in message.split()]
             if len(m) != 4:
                 raise ValueError
             return m
         except ValueError:
-            print("Input non valido. Assicurati di inserire esattamente 4 byte in formato esadecimale.")
+            print("Input not valide. Esnure to insert exactly 4 byte in exadecimal format.")
 
 # Example usage:
 IV = [0x34, 0x55, 0x0F, 0x14]  # Initialization Vector (4 bytes)
