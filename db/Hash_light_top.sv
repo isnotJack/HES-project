@@ -68,7 +68,7 @@ module Hash_light_top(
     // Logica della FSM
     always_comb begin
         next_state = state;
-		  done=0;
+		done=0;
         case (state)
             IDLE: begin
                 if (start)
