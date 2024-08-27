@@ -1,5 +1,5 @@
 Timing Analyzer report for Hash_light_top
-Thu Aug 22 11:31:38 2024
+Tue Aug 27 15:19:05 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -99,14 +99,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.24        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.1%      ;
-;     Processor 3            ;   7.8%      ;
-;     Processor 4            ;   7.7%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processor 3            ;   0.5%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -115,7 +115,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+--------+--------------------------+
 ; SDC File Path                   ; Status ; Read at                  ;
 +---------------------------------+--------+--------------------------+
-; constr/time_constr_template.sdc ; OK     ; Thu Aug 22 11:31:32 2024 ;
+; constr/time_constr_template.sdc ; OK     ; Tue Aug 27 15:19:03 2024 ;
 +---------------------------------+--------+--------------------------+
 
 
@@ -471,7 +471,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Aug 22 11:31:28 2024
+    Info: Processing started: Tue Aug 27 15:18:59 2024
 Info: Command: quartus_sta Hash_light_top -c Hash_light_top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -498,8 +498,6 @@ Info (332146): Worst-case minimum pulse width slack is 8.991
     Info (332119): ========= =================== =====================
     Info (332119):     8.991               0.000 clk 
 Info: Analyzing Slow 1100mV 0C Model
-Info (334003): Started post-fitting delay annotation
-Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332146): Worst-case setup slack is 5.746
     Info (332119):     Slack       End Point TNS Clock 
@@ -516,8 +514,6 @@ Info (332146): Worst-case minimum pulse width slack is 8.884
     Info (332119): ========= =================== =====================
     Info (332119):     8.884               0.000 clk 
 Info: Analyzing Fast 1100mV 85C Model
-Info (334003): Started post-fitting delay annotation
-Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332146): Worst-case setup slack is 7.656
     Info (332119):     Slack       End Point TNS Clock 
@@ -552,9 +548,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.150
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5273 megabytes
-    Info: Processing ended: Thu Aug 22 11:31:38 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 5056 megabytes
+    Info: Processing ended: Tue Aug 27 15:19:05 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
 
 

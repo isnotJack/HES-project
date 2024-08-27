@@ -1,19 +1,9 @@
-# Compile of completo.sv was successful with warnings.
-# Compile of FPX.sv was successful with warnings.
-# Compile of Hash_light_top.sv was successful with warnings.
-# Compile of Hash_round.sv was successful with warnings.
-# Compile of Rho.sv was successful with warnings.
-# Compile of SA.sv was successful with warnings.
-# Compile of Theta.sv was successful with warnings.
-# Compile of Xor_module.sv was successful with warnings.
-# Compile of Hash_light_tb.sv was successful.
-# 9 compiles, 0 failed with no errors.
 vsim -gui work.hash_function_tb
 # vsim -gui work.hash_function_tb 
-# Start time: 12:21:06 on Aug 21,2024
+# Start time: 15:43:13 on Aug 27,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
-# Loading work.hash_function
+# Loading work.Hash_light_top
 # Loading work.round
 # Loading work.SA
 # Loading work.XOR_Module
@@ -27,14 +17,23 @@ add wave -position end  sim:/hash_function_tb/m
 add wave -position end  sim:/hash_function_tb/IV
 add wave -position end  sim:/hash_function_tb/d
 add wave -position end  sim:/hash_function_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fabbr  Hostname: LAPTOP-DP9M9O1U  ProcessID: 5280
+#           Attempting to use alternate WLF file "./wlftytmtvy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftytmtvy
 run
 # Digest: 48 96 cd b8
 # Digest: 70 88 21 63
-# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(94)
-#    Time: 585 ps  Iteration: 0  Instance: /hash_function_tb
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 94
-# Can't move the Now cursor.
-# Break key hit
-quit -sim
-# End time: 12:22:16 on Aug 21,2024, Elapsed time: 0:01:10
-# Errors: 0, Warnings: 4
+# Digest: 70 88 21 63
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(109)
+#    Time: 875 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 109
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
