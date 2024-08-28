@@ -1,6 +1,7 @@
+# Compile of Hash_light_tb.sv was successful.
 vsim -gui work.hash_function_tb
 # vsim -gui work.hash_function_tb 
-# Start time: 15:43:13 on Aug 27,2024
+# Start time: 15:04:22 on Aug 28,2024
 # Loading sv_std.std
 # Loading work.hash_function_tb
 # Loading work.Hash_light_top
@@ -19,21 +20,327 @@ add wave -position end  sim:/hash_function_tb/d
 add wave -position end  sim:/hash_function_tb/done
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: fabbr  Hostname: LAPTOP-DP9M9O1U  ProcessID: 5280
-#           Attempting to use alternate WLF file "./wlftytmtvy".
+#           Attempting to use alternate WLF file "./wlftmai3q6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftytmtvy
+#           Using alternate file: ./wlftmai3q6
 run
 # Digest: 48 96 cd b8
 # Digest: 70 88 21 63
 # Digest: 70 88 21 63
-# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(109)
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(145)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(145)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+add wave -position 3  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+quit -sim
+# End time: 16:05:13 on Aug 28,2024, Elapsed time: 1:00:51
+# Errors: 0, Warnings: 2
+# Compile of Hash_light_tb.sv was successful.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:05:22 on Aug 28,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.Hash_light_top
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fabbr  Hostname: LAPTOP-DP9M9O1U  ProcessID: 5280
+#           Attempting to use alternate WLF file "./wlftf0n7an".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf0n7an
+run
+# Digest: 48 96 cd b8
+# Digest: 48 96 cd b8
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(210)
+#    Time: 865 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 210
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+quit -sim
+# End time: 16:07:29 on Aug 28,2024, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 4
+# Compile of Hash_light_tb.sv was successful.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:07:39 on Aug 28,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.Hash_light_top
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fabbr  Hostname: LAPTOP-DP9M9O1U  ProcessID: 5280
+#           Attempting to use alternate WLF file "./wlft543y3q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft543y3q
+run
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
+#    Time: 865 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
+#    Time: 865 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
+quit -sim
+# End time: 16:31:21 on Aug 28,2024, Elapsed time: 0:23:42
+# Errors: 0, Warnings: 1
+# Compile of Hash_light_tb.sv was successful.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:31:34 on Aug 28,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.Hash_light_top
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/IV
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fabbr  Hostname: LAPTOP-DP9M9O1U  ProcessID: 5280
+#           Attempting to use alternate WLF file "./wlftzr8y12".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzr8y12
+add wave -position end  sim:/hash_function_tb/dut/IDLE
+add wave -position end  sim:/hash_function_tb/dut/CALC_SA
+add wave -position end  sim:/hash_function_tb/dut/CALC_ROUND
+add wave -position end  sim:/hash_function_tb/dut/CALC_FINAL
+add wave -position end  sim:/hash_function_tb/dut/DONE
+add wave -position end  sim:/hash_function_tb/dut/clk
+add wave -position end  sim:/hash_function_tb/dut/rst_n
+add wave -position end  sim:/hash_function_tb/dut/start
+add wave -position end  sim:/hash_function_tb/dut/m
+add wave -position end  sim:/hash_function_tb/dut/IV
+add wave -position end  sim:/hash_function_tb/dut/d
+add wave -position end  sim:/hash_function_tb/dut/done
+add wave -position end  sim:/hash_function_tb/dut/H
+add wave -position end  sim:/hash_function_tb/dut/state
+add wave -position end  sim:/hash_function_tb/dut/next_state
+add wave -position end  sim:/hash_function_tb/dut/round
+add wave -position end  sim:/hash_function_tb/dut/H_intermediate
+add wave -position end  sim:/hash_function_tb/dut/H_fpx
+add wave -position end  sim:/hash_function_tb/dut/H_out
+run
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Break key hit
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
+#    Time: 865 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
+add wave -position end  sim:/hash_function_tb/done
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
+#    Time: 865 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
 #    Time: 875 ps  Iteration: 0  Instance: /hash_function_tb
-# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 109
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
 # WARNING: No extended dataflow license exists
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
 # Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
 # Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: xx xx xx xx
+# ** Note: $stop    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(211)
+#    Time: 315 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv line 211
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(145)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+# Digest: 48 96 cd b8
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(145)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+# Digest: 48 96 cd b8
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# Compile of Hash_light_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hash_function_tb
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/HES-project/tb/Hash_light_tb.sv(145)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+# Digest: 48 96 cd b8
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# End time: 16:57:30 on Aug 28,2024, Elapsed time: 0:25:56
+# Errors: 0, Warnings: 2

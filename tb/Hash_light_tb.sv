@@ -45,6 +45,7 @@ module hash_function_tb;
         rst_n = 1;
 
         // Test Case 1 --> standard model
+        // Prova con valori noti
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
         IV[0] = 8'h34;
         IV[1] = 8'h55;
@@ -63,6 +64,7 @@ module hash_function_tb;
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
 
         // Test Case 2: Altro set di valori
+        //Prova con valori noti
         #10;
         $readmemh("../modelsim/tv/Test_Vector2.hex",m);
         IV[0] = 8'h34;
@@ -82,8 +84,9 @@ module hash_function_tb;
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
 
-        // Test Case 3: 1st Corner Case
         #10;
+        // Test Case 3: 1st Corner Case
+        // Lettura di valori noti di m dopo l'attivazione di start
         IV[0] = 8'h34;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
@@ -101,6 +104,121 @@ module hash_function_tb;
         // Aspetta che il processo di hashing finisca
         wait(done)@ (posedge clk);
 
+        // Mostra l'output del digest
+        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
+
+        #10;
+        // Test Case 4: 2nd Corner Case
+        // Attivazione di reset durante un round
+        #10;
+        $readmemh("../modelsim/tv/Test_Vector1.hex",m);
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
+        // Avviare l'hashing
+        #10;
+        start = 1;
+        #10;
+        start = 0;
+
+        #50
+        rst_n = 0;
+        #10
+        rst_n =1;
+        
+        #10;
+        start = 1;
+        #10;
+        start = 0;
+        
+        // Aspetta che il processo di hashing finisca
+        wait(done)@ (posedge clk);
+
+        // Mostra l'output del digest
+        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
+
+        #10;
+        // Test Case 5: 3rd Corner Case
+        // Input più grande di 4 byte
+        #10;
+        $readmemh("../modelsim/tv/Test_Vector3.hex",m);
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
+        // Avviare l'hashing
+        #10;
+        start = 1;
+        #10;
+        start = 0;
+        
+        // Aspetta che il processo di hashing finisca
+        wait(done)@ (posedge clk);
+
+        // Mostra l'output del digest
+        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
+
+        #10;
+        // Test Case 6: 4th Corner Case
+        // start riattivato per errore
+        #10;
+        $readmemh("../modelsim/tv/Test_Vector1.hex",m);
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
+        // Avviare l'hashing
+        #10;
+        start = 1;
+        #10;
+        start = 0;
+        #40;
+        start = 1 ;
+        // Aspetta che il processo di hashing finisca
+        wait(done)@ (posedge clk);
+        #10;
+        wait(done)@ (posedge clk);
+        start=0;
+        // Mostra l'output del digest
+        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
+        
+        //  Test Case 7a: 5th Corner Case
+        // reset e start attivati contemporaneamente, disabilitati sul rising edge
+        #10;
+        $readmemh("../modelsim/tv/Test_Vector1.hex",m);
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
+        // Avviare l'hashing
+        #10;
+        rst_n = 0;
+        start = 1;
+        #20;
+        rst_n=1;
+        start = 0;
+        // Aspetta che il processo di hashing finisca
+        wait(done)@ (posedge clk);
+        // Mostra l'output del digest
+        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
+        //  Test Case 7b: 5th Corner Case
+        // reset e start attivati contemporaneamente,disabilitati sul falling edge
+        #10;
+        $readmemh("../modelsim/tv/Test_Vector1.hex",m);
+        IV[0] = 8'h34;
+        IV[1] = 8'h55;
+        IV[2] = 8'h0F;
+        IV[3] = 8'h14;
+        // Avviare l'hashing
+        #5;
+        rst_n = 0;
+        start = 1;
+        #20;
+        rst_n=1;
+        start = 0;
+        // Aspetta che il processo di hashing finisca
+        wait(done)@ (posedge clk);
         // Mostra l'output del digest
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
 
