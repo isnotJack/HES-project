@@ -16,6 +16,7 @@ module round(
     parameter [2:0] CALC_FINAL = 3'b011;
     parameter [2:0] DONE = 3'b100;
  
+    // Module port connection
     SA sa_inst (.m(H_in), .IV(IV), .H(H_intermediate_SA));
     XOR_Module xor_inst (.H_in(H_in), .IV(IV), .H_out(H_intermediate_XOR));
     Theta theta_inst (.H_in(H_intermediate), .H_out(H_intermediate_Theta));

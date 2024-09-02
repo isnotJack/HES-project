@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Hash_light_top
-Tue Aug 27 18:26:12 2024
+Mon Sep  2 11:54:27 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 27 18:26:12 2024          ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep  2 11:54:27 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Hash_light_top                                 ;
 ; Top-level Entity Name           ; Hash_light_top                                 ;
@@ -171,8 +171,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -435,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -445,7 +444,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Aug 27 18:25:51 2024
+    Info: Processing started: Mon Sep  2 11:54:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Hash_light_top -c Hash_light_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -466,16 +465,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/fabbr/desktop/hes-project/db/fpx.sv
     Info (12023): Found entity 1: FPX File: C:/Users/fabbr/Desktop/HES-project/db/FPX.sv Line: 2
 Info (12127): Elaborating entity "Hash_light_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Hash_light_top.sv(54): truncated value with size 32 to match size of target (5) File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 54
-Warning (10230): Verilog HDL assignment warning at Hash_light_top.sv(58): truncated value with size 32 to match size of target (5) File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 58
-Warning (10270): Verilog HDL Case Statement warning at Hash_light_top.sv(72): incomplete case statement has no default case item File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 72
-Info (12128): Elaborating entity "round" for hierarchy "round:round_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 37
-Info (10264): Verilog HDL Case Statement information at Hash_round.sv(25): all case item expressions in this case statement are onehot File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 25
-Info (12128): Elaborating entity "SA" for hierarchy "round:round_inst|SA:sa_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 19
-Info (12128): Elaborating entity "XOR_Module" for hierarchy "round:round_inst|XOR_Module:xor_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 20
-Info (12128): Elaborating entity "Theta" for hierarchy "round:round_inst|Theta:theta_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 21
-Info (12128): Elaborating entity "rho" for hierarchy "round:round_inst|rho:rho_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 22
-Info (12128): Elaborating entity "FPX" for hierarchy "FPX:fpx_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at Hash_light_top.sv(41): truncated value with size 32 to match size of target (5) File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at Hash_light_top.sv(45): truncated value with size 32 to match size of target (5) File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 45
+Warning (10270): Verilog HDL Case Statement warning at Hash_light_top.sv(59): incomplete case statement has no default case item File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 59
+Info (12128): Elaborating entity "round" for hierarchy "round:round_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 27
+Info (10264): Verilog HDL Case Statement information at Hash_round.sv(26): all case item expressions in this case statement are onehot File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 26
+Info (12128): Elaborating entity "SA" for hierarchy "round:round_inst|SA:sa_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 20
+Info (12128): Elaborating entity "XOR_Module" for hierarchy "round:round_inst|XOR_Module:xor_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 21
+Info (12128): Elaborating entity "Theta" for hierarchy "round:round_inst|Theta:theta_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 22
+Info (12128): Elaborating entity "rho" for hierarchy "round:round_inst|rho:rho_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_round.sv Line: 23
+Info (12128): Elaborating entity "FPX" for hierarchy "FPX:fpx_inst" File: C:/Users/fabbr/Desktop/HES-project/db/Hash_light_top.sv Line: 28
 Info (278001): Inferred 4 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "round:round_inst|rho:rho_inst|Mod0" File: C:/Users/fabbr/Desktop/HES-project/db/Rho.sv Line: 7
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "round:round_inst|rho:rho_inst|Mod1" File: C:/Users/fabbr/Desktop/HES-project/db/Rho.sv Line: 7
@@ -670,33 +669,33 @@ Warning (15752): Ignored 90 Virtual Pin logic option assignments
     Warning (15720): Ignored Virtual Pin assignment to node "round[2]"
     Warning (15720): Ignored Virtual Pin assignment to node "round[1]"
     Warning (15720): Ignored Virtual Pin assignment to node "round[0]"
-    Warning (15751): Ignored Virtual Pin assignment to "LessThan1".
-    Warning (15751): Ignored Virtual Pin assignment to "Mux0".
-    Warning (15751): Ignored Virtual Pin assignment to "always1".
-    Warning (15751): Ignored Virtual Pin assignment to "Mux2".
-    Warning (15751): Ignored Virtual Pin assignment to "H_out".
-    Warning (15751): Ignored Virtual Pin assignment to "Decoder0".
-    Warning (15751): Ignored Virtual Pin assignment to "round:round_inst".
-    Warning (15751): Ignored Virtual Pin assignment to "always0".
-    Warning (15751): Ignored Virtual Pin assignment to "Equal0".
-    Warning (15751): Ignored Virtual Pin assignment to "Mux1".
-    Warning (15751): Ignored Virtual Pin assignment to "next_state".
     Warning (15751): Ignored Virtual Pin assignment to "H".
-    Warning (15751): Ignored Virtual Pin assignment to "FPX:fpx_inst".
-    Warning (15751): Ignored Virtual Pin assignment to "Add0".
-    Warning (15751): Ignored Virtual Pin assignment to "Equal1".
-    Warning (15751): Ignored Virtual Pin assignment to "LessThan0".
     Warning (15751): Ignored Virtual Pin assignment to "Equal2".
+    Warning (15751): Ignored Virtual Pin assignment to "Add0".
+    Warning (15751): Ignored Virtual Pin assignment to "round:round_inst".
+    Warning (15751): Ignored Virtual Pin assignment to "Equal0".
+    Warning (15751): Ignored Virtual Pin assignment to "LessThan0".
+    Warning (15751): Ignored Virtual Pin assignment to "always0".
+    Warning (15751): Ignored Virtual Pin assignment to "FPX:fpx_inst".
+    Warning (15751): Ignored Virtual Pin assignment to "Mux2".
     Warning (15751): Ignored Virtual Pin assignment to "Equal3".
+    Warning (15751): Ignored Virtual Pin assignment to "LessThan1".
+    Warning (15751): Ignored Virtual Pin assignment to "next_state".
+    Warning (15751): Ignored Virtual Pin assignment to "always1".
+    Warning (15751): Ignored Virtual Pin assignment to "Equal1".
+    Warning (15751): Ignored Virtual Pin assignment to "Decoder0".
+    Warning (15751): Ignored Virtual Pin assignment to "Mux0".
+    Warning (15751): Ignored Virtual Pin assignment to "Mux1".
+    Warning (15751): Ignored Virtual Pin assignment to "H_out".
 Info (21057): Implemented 296 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
     Info (21061): Implemented 295 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 95 warnings
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Tue Aug 27 18:26:12 2024
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Mon Sep  2 11:54:27 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+

@@ -15,31 +15,18 @@ module Hash_light_top(
     logic [7:0] H_fpx [0:3];
     logic [7:0] H_out [0:3];
 
-
-    // Stati della FSM
-    /*typedef enum logic [2:0] {
-        IDLE,
-        CALC_SA,
-        CALC_ROUND,
-        CALC_FINAL,
-        DONE
-    } state_t;*/
-
     parameter [2:0] IDLE = 3'b000;
     parameter [2:0] CALC_SA = 3'b001;
     parameter [2:0] CALC_ROUND = 3'b010;
     parameter [2:0] CALC_FINAL = 3'b011;
     parameter [2:0] DONE = 3'b100;
 
-    //state_t state, next_state;
 
-    // Istanziare i moduli
+
+    // Module port connection
     round round_inst (.H_in(H_intermediate), .IV(IV), .H_out(H_out), .state(state));
     FPX fpx_inst (.H(H_fpx), .IV(IV), .d(d));
- 
-    // Multiplexer per selezionare il segnale corretto
-     
-    // Registro di stato
+
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             state <= IDLE;
@@ -65,7 +52,7 @@ module Hash_light_top(
         end
     end
 
-    // Logica della FSM
+    // FSM logic
     always_comb begin
         next_state = state;
 		done=0;

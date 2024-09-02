@@ -1,17 +1,17 @@
 module hash_function_tb;
 
-    // Parametri di ingresso
+    // Input Parameters
     logic clk;
     logic rst_n;
     logic start;
     logic [7:0] m [0:3];
     logic [7:0] IV [0:3];
 
-    // Parametri di uscita
+    //  Output Parameters
     logic [7:0] d [0:3];
     logic done;
 
-    // Istanziare il DUT (Device Under Test)
+    //DUT (Device Under Test)
     Hash_light_top dut (
         .clk(clk),
         .rst_n(rst_n),
@@ -25,9 +25,7 @@ module hash_function_tb;
     // Clock generation
     always #5 clk = ~clk;
 
-    // Procedura iniziale
     initial begin
-        // Inizializzazione
         clk = 0;
         rst_n = 0;
         start = 0;
@@ -51,7 +49,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #10;
@@ -72,7 +70,7 @@ module hash_function_tb;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
 
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #10;
@@ -94,7 +92,7 @@ module hash_function_tb;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
 
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #5;
@@ -119,7 +117,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #10;
@@ -134,10 +132,8 @@ module hash_function_tb;
         start = 1;
         #10;
         start = 0;
-        
          // waiting for the end of computation
         wait(done) @ (posedge clk);
-
         // shows digest output
         $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
 
@@ -151,7 +147,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #10;
@@ -172,7 +168,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #10;
         start = 1;
         #10;
@@ -195,7 +191,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #10;
         rst_n = 0;
         start = 1;
@@ -216,7 +212,7 @@ module hash_function_tb;
         IV[1] = 8'h55;
         IV[2] = 8'h0F;
         IV[3] = 8'h14;
-        // starting hashing computation
+        // starting hash computation
         #5;
         rst_n = 0;
         start = 1;
