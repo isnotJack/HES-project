@@ -8,7 +8,6 @@ module Hash_light_top(
     output logic done
 );
 
-    logic [7:0] H [0:3];
     logic [2:0] state, next_state;
     logic [4:0] round;
     logic [7:0] H_intermediate [0:3];
