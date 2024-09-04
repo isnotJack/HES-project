@@ -1,0 +1,58 @@
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_light_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of Hash_light_top.sv failed with 2 errors.
+# Compile of Hash_light_top.sv was successful with warnings.
+vsim -gui work.hash_function_tb
+# vsim -gui work.hash_function_tb 
+# Start time: 16:08:19 on Sep 04,2024
+# Loading sv_std.std
+# Loading work.hash_function_tb
+# Loading work.Hash_light_top
+# Loading work.round
+# Loading work.SA
+# Loading work.XOR_Module
+# Loading work.Theta
+# Loading work.rho
+# Loading work.FPX
+add wave -position end  sim:/hash_function_tb/clk
+add wave -position end  sim:/hash_function_tb/rst_n
+add wave -position end  sim:/hash_function_tb/start
+add wave -position end  sim:/hash_function_tb/m
+add wave -position end  sim:/hash_function_tb/d
+add wave -position end  sim:/hash_function_tb/done
+run
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv(123)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+# Digest: 48 96 cd b8
+run
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv(187)
+#    Time: 2460 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv line 187
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# Digest: 48 96 cd b8
+# Digest: 70 88 21 63
+# Digest: 70 88 21 63
+# Digest: 48 96 cd b8
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "../modelsim/tv/Test_Vector3.hex". (Current address [4], address range [0:3])    : C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv(123)
+#    Time: 1265 ps  Iteration: 0  Instance: /hash_function_tb
+# Digest: 48 96 cd b8
+# Digest: 48 96 cd b8
+# Digest: 00 d6 8d f0
+# ** Note: $stop    : C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv(187)
+#    Time: 2460 ps  Iteration: 0  Instance: /hash_function_tb
+# Break in Module hash_function_tb at C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv line 187
+# End time: 16:10:10 on Sep 04,2024, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 2

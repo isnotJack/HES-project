@@ -5,7 +5,6 @@ module hash_function_tb;
     logic rst_n;
     logic start;
     logic [7:0] m [0:3];
-    logic [7:0] IV [0:3];
 
     //  Output Parameters
     logic [7:0] d [0:3];
@@ -17,7 +16,6 @@ module hash_function_tb;
         .rst_n(rst_n),
         .start(start),
         .m(m),
-        .IV(IV),
         .d(d),
         .done(done)
     );
@@ -33,10 +31,6 @@ module hash_function_tb;
         m[1] = 8'h00;
         m[2] = 8'h00;
         m[3] = 8'h00;
-        IV[0] = 8'h00;
-        IV[1] = 8'h00;
-        IV[2] = 8'h00;
-        IV[3] = 8'h00;
 
         // Reset deassertion
         #10;
@@ -45,10 +39,6 @@ module hash_function_tb;
         // Test Case 1 --> standard model
         // Test with known values
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #10;
         start = 1;
@@ -65,10 +55,6 @@ module hash_function_tb;
         //test with kwown value
         #10;
         $readmemh("../modelsim/tv/Test_Vector2.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
 
         // starting hash computation
         #10;
@@ -87,10 +73,6 @@ module hash_function_tb;
     
         // Test Case 3: 1st Corner Case
         // reading of known value but after the rise of start signal
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
 
         // starting hash computation
         #10;
@@ -113,10 +95,6 @@ module hash_function_tb;
         // Reset activation during a round and then restart
         #10;
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #10;
         start = 1;
@@ -143,10 +121,6 @@ module hash_function_tb;
         // Input larger then 4 bytes
         #10;
         $readmemh("../modelsim/tv/Test_Vector3.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #10;
         start = 1;
@@ -164,10 +138,6 @@ module hash_function_tb;
         // Start signal reactivated and left active
         #10;
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #10;
         start = 1;
@@ -187,10 +157,6 @@ module hash_function_tb;
         // Reset and start activated simoultaneously, disabled on rising edge
         #10;
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #10;
         rst_n = 0;
@@ -208,10 +174,6 @@ module hash_function_tb;
         // Reset and start activated simoultaneously, disabled on falling edge
         #10;
         $readmemh("../modelsim/tv/Test_Vector1.hex",m);
-        IV[0] = 8'h34;
-        IV[1] = 8'h55;
-        IV[2] = 8'h0F;
-        IV[3] = 8'h14;
         // starting hash computation
         #5;
         rst_n = 0;
@@ -219,13 +181,7 @@ module hash_function_tb;
         #20;
         rst_n=1;
         start = 0;
-        // waiting for the end of computation
-        wait(done) @ (posedge clk);
-
-        // shows digest output
-        $display("Digest: %h %h %h %h", d[0], d[1], d[2], d[3]);
-
-
+        
         // end of simulation
         #10;
         $stop;

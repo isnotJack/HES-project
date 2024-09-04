@@ -1,0 +1,216 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vFPX
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1725458097
+!i10b 1
+!s100 z3BaB=ha4kha:GzcV[kW:3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<dJ?H;iV;V<EDn8IX=97=2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 dC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/modelsim
+Z4 w1724163500
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/FPX.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/FPX.sv
+!i122 0
+L0 2 11
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1725458097.000000
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/FPX.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/FPX.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@f@p@x
+vhash_function_tb
+R0
+!s110 1725458709
+!i10b 1
+!s100 ILM5NCAe3ZG9jDafP>nNe3
+R1
+IJ^<25l_lKe004ONZl1=z33
+R2
+S1
+R3
+w1725458682
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv
+!i122 8
+L0 1 190
+R5
+r1
+!s85 0
+31
+!s108 1725458709.000000
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/tb/Hash_light_tb.sv|
+!i113 1
+R7
+R8
+vHash_light_top
+R0
+!s110 1725458887
+!i10b 1
+!s100 `hWH:=Z0X7jFKRao[bSiX1
+R1
+IUec@3bl]M09WBJi<6Z?om3
+R2
+S1
+R3
+w1725458882
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_light_top.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_light_top.sv
+!i122 9
+L0 1 83
+R5
+r1
+!s85 0
+31
+!s108 1725458887.000000
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_light_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_light_top.sv|
+!i113 1
+R7
+R8
+n@hash_light_top
+vrho
+R0
+Z9 !s110 1725458098
+!i10b 1
+!s100 Q]R;DCWek?9RYcYQnjzkX1
+R1
+IYVJiKbCAmRX]9zYbILbV92
+R2
+S1
+R3
+w1724232652
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Rho.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Rho.sv
+!i122 3
+L0 1 10
+R5
+r1
+!s85 0
+31
+Z10 !s108 1725458098.000000
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Rho.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Rho.sv|
+!i113 1
+R7
+R8
+vround
+R0
+R9
+!i10b 1
+!s100 ljA3em`hdZfN0zQmUP4H`3
+R1
+IAeA6Yn;WhId:oj;RoJI0b0
+R2
+S1
+R3
+w1725270655
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_round.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_round.sv
+!i122 2
+L0 1 42
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_round.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Hash_round.sv|
+!i113 1
+R7
+R8
+vSA
+R0
+R9
+!i10b 1
+!s100 1@<69m3IlFEEezaUIFb7e2
+R1
+IS0QmZ5@?E?AKT71??TA8H2
+R2
+S1
+R3
+R4
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/SA.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/SA.sv
+!i122 4
+Z11 L0 1 11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/SA.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/SA.sv|
+!i113 1
+R7
+R8
+n@s@a
+vTheta
+R0
+R9
+!i10b 1
+!s100 _do42@nFDPKDQ7TmF8WSl2
+R1
+I@imio_BLoO1J]XB<6_F@g2
+R2
+S1
+R3
+w1725270676
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Theta.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Theta.sv
+!i122 5
+R11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Theta.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Theta.sv|
+!i113 1
+R7
+R8
+n@theta
+vXOR_Module
+R0
+R9
+!i10b 1
+!s100 ]5Z0cgMBEHS:BeN84fn?60
+R1
+I3eNl9Q1PYQJ=4Y5hng7aT1
+R2
+S1
+R3
+R4
+8C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Xor_module.sv
+FC:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Xor_module.sv
+!i122 6
+R11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Xor_module.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/fabbr/Desktop/Uni/Anno 4/Hardware/project_930II_2023_2024_fabbri_maldarella/db/Xor_module.sv|
+!i113 1
+R7
+R8
+n@x@o@r_@module

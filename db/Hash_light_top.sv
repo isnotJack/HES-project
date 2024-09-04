@@ -3,7 +3,6 @@ module Hash_light_top(
     input  logic rst_n,
     input  logic start,
     input  logic [7:0] m [0:3],
-    input  logic [7:0] IV [0:3],
     output logic [7:0] d [0:3],
     output logic done
 );
@@ -13,6 +12,7 @@ module Hash_light_top(
     logic [7:0] H_intermediate [0:3];
     logic [7:0] H_fpx [0:3];
     logic [7:0] H_out [0:3];
+    logic [7:0] IV [0:3] = '{8'h34, 8'h55, 8'h0F, 8'h14};
 
     parameter [2:0] IDLE = 3'b000;
     parameter [2:0] CALC_SA = 3'b001;
