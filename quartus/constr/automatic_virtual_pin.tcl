@@ -11,8 +11,8 @@ foreach_in_collection name_id $name_ids {
 		set pin_name [get_name_info -info full_path $name_id]
 		if {[string match *clk* $pin_name] && ![string match *rst* $pin_name]} {
 			puts "Clock port detected: skipping VIRTUAL_PIN assignment to $pin_name"
-			set clk_name [get_timing_node_info -info name $pin_name]
-			puts $clk_name
+			# set clk_name [get_timing_node_info -info name $pin_name]
+			# puts $clk_name
 			set clk_stgs [get_instance_assignment -to $pin_name -name CLOCK_SETTINGS]
 			set_instance_assignment -to $pin_name -name USE_CLK_FOR_VIRTUAL_PIN $clk_stgs
 		} else {
